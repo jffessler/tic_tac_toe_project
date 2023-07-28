@@ -43,138 +43,160 @@ def place_marker(board, marker, position):
 def win_check(board, marker):
     
     win_cond = {'one':[1,2,3],'two':[4,5,6],'three':[7,8,9],'four':[1,4,7],'five':[2,5,8],'six':[3,6,9],'seven':[1,5,9],'eight':[3,5,7]}
+    reset_board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+
     
     if marker == 'X':
         if [board[win_cond['one'][0]],board[win_cond['one'][1]],board[win_cond['one'][2]]] == ['X','X','X']:
             print('X wins!!1')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['two'][0]],board[win_cond['two'][1]],board[win_cond['two'][2]]] == ['X','X','X']:
             print('X wins!!2')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['three'][0]],board[win_cond['three'][1]],board[win_cond['three'][2]]] == ['X','X','X']:
             print('X wins!!3')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['four'][0]],board[win_cond['four'][1]],board[win_cond['four'][2]]] == ['X','X','X']:
             print('X wins!!4')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['five'][0]],board[win_cond['five'][1]],board[win_cond['five'][2]]] == ['X','X','X']:
             print('X wins!!5')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['six'][0]],board[win_cond['six'][1]],board[win_cond['six'][2]]] == ['X','X','X']:
             print('X wins!!6')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['seven'][0]],board[win_cond['seven'][1]],board[win_cond['seven'][2]]] == ['X','X','X']:
             print('X wins!!7')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['eight'][0]],board[win_cond['eight'][1]],board[win_cond['eight'][2]]] == ['X','X','X']:
             print('X wins!!8')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
+        else:
+            return 'not yet', 'not, yet'
         
     if marker == 'O':
         if [board[win_cond['one'][0]],board[win_cond['one'][1]],board[win_cond['one'][2]]] == ['O','O','O']:
             print('O wins!!1')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['two'][0]],board[win_cond['two'][1]],board[win_cond['two'][2]]] == ['O','O','O']:
             print('O wins!!2')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['three'][0]],board[win_cond['three'][1]],board[win_cond['three'][2]]] == ['O','O','O']:
             print('O wins!!3')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['four'][0]],board[win_cond['four'][1]],board[win_cond['four'][2]]] == ['O','O','O']:
             print('O wins!!4')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['five'][0]],board[win_cond['five'][1]],board[win_cond['five'][2]]] == ['O','O','O']:
             print('O wins!!5')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['six'][0]],board[win_cond['six'][1]],board[win_cond['six'][2]]] == ['O','O','O']:
             print('O wins!!6')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['seven'][0]],board[win_cond['seven'][1]],board[win_cond['seven'][2]]] == ['O','O','O']:
             print('O wins!!7')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
         elif [board[win_cond['eight'][0]],board[win_cond['eight'][1]],board[win_cond['eight'][2]]] == ['O','O','O']:
             print('O wins!!8')
             if not replay():
                 game_on = False
-                return game_on
+                thanks = 'Thank you for playing!'
+                return game_on, thanks
             else: 
-                game_on = True
-                return game_on
+                board = reset_board
+                return True, board
+        else:
+            return 'not yet', 'not, yet'
 
 import random
 
@@ -208,8 +230,11 @@ def full_board_check(board):
 def player_choice(board):
     check = False
     while check == False:
-        position = int(input('Choose your next move (1-9): '))
-        if position in range(1,10):
+        pos = input('Choose your next move (1-9): ')
+        position = 100
+        if pos in ['1','2','3','4','5','6','7','8','9']:
+            position = int(pos)
+#         elif position in range(1,10):
             if space_check(board,position):
                 check = True
 #                 print('returnedddddddddddddddddddd')
@@ -228,12 +253,19 @@ def replay():
         if playagain == 'Y' or playagain == 'N':
             if playagain == 'Y':
                 play = True
-                board = ['#',' ',' ',' ',' ',' ',' ',' ',' ',' ']
+                print('Now switch who goes first!')
                 return True
-            else: False
+            else:
+                play = True
+                return False
         else:
             print('Incorrect input, use only Y or N ')
             continue
+    
+####################################
+#function calls#
+####################################
+    
     
 print('Welcome to Tic Tac Toe!')
 
@@ -253,9 +285,12 @@ while game_on == True:
         
         turn = 0
         
+#         newboard = 1
+#         next_game = 1
+        
         display_board(board)
     
-        player1 = player_input()
+        player1 = player_input() # X or O
 #         print(player1)
         
         if player1 == 'X':
@@ -263,12 +298,12 @@ while game_on == True:
         else:
             player2 = 'X'
 
-        (play1,play2) = choose_first()
+        (play1,play2) = choose_first() # comes back as (1, 2) or (2, 1)
         
-        print(player1)
-        print(player2)
-        print(play1)
-        print(play2)
+#         print(player1)
+#         print(player2)
+#         print(play1)
+#         print(play2)
         
         while play1 == 1 and game_on == True:
             
@@ -288,7 +323,19 @@ while game_on == True:
                 
                 display_board(board)
                 
-                win_check(board, marker)
+#                 print('Loop 1')
+#                 print(f'next_game: {next_game}')
+#                 print(f'newboard: {newboard}') 
+                
+                (next_game, newboard) = win_check(board, marker)
+
+                
+                if next_game == True:
+#                     print("1111")
+                    board = newboard
+                elif next_game == False:
+                    print(newboard)
+                    game_on = next_game
                 
                 full_board_check(board)
                 
@@ -310,7 +357,18 @@ while game_on == True:
                 
                 display_board(board)
                 
-                win_check(board, marker)
+#                 print('Loop 2')
+#                 print(f'next_game: {next_game}')
+#                 print(f'newboard: {newboard}')
+                
+                (next_game, newboard) = win_check(board, marker)
+                
+                if next_game == True:
+#                     print("2222")
+                    board = newboard
+                elif next_game == False:
+                    print(newboard)
+                    game_on = next_game
                 
                 full_board_check(board)
             
@@ -340,7 +398,18 @@ while game_on == True:
                 
                 display_board(board)
                 
-                win_check(board, marker)
+#                 print('Loop 3')
+#                 print(f'next_game: {next_game}')
+#                 print(f'newboard: {newboard}')
+                
+                (next_game, newboard) = win_check(board, marker)
+                
+                if next_game == True:
+#                     print("3333")
+                    board = newboard
+                elif next_game == False:
+                    print(newboard)
+                    game_on = next_game
                 
                 full_board_check(board)
 
@@ -361,7 +430,18 @@ while game_on == True:
                 
                 display_board(board)
                 
-                win_check(board, marker)
+#                 print('Loop 4')
+#                 print(f'next_game: {next_game}')
+#                 print(f'newboard: {newboard}')
+                
+                (next_game, newboard) = win_check(board, marker)
+                
+                if next_game == True:
+#                     print("4444")
+                    board = newboard
+                elif next_game == False:
+                    print(newboard)
+                    game_on = next_game
                 
                 full_board_check(board)
                 
